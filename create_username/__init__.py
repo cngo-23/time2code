@@ -20,7 +20,7 @@ names = {}
 result = []
 
 with open("input.txt", 'r') as file:
-    for i, line in enumerate(file):
+    for line in (file):
         line = line.strip()
         line = line.split(' ')
         firstname = line[0][0]
@@ -35,7 +35,7 @@ with open("input.txt", 'r') as file:
         with open("output.txt", 'a') as output:
             for word in line:
                 info += word + " "
-            output.write(info + " " + userID + "\n")
+            output.write(info + userID + "\n")
 
 
 
